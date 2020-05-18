@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTwo from './pagetwo';
+import Users from './pagetwo';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <h1>My First React app</h1>
       <p>Welcome :)</p>
-      <PageTwo users={users} />
+      <Users users={users} />
     </div>
   );
 }
