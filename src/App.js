@@ -1,5 +1,6 @@
 import React from 'react';
 import Users from './pagetwo';
+import AddUser from './AddUser';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <h1>My First React app</h1>
       <p>Welcome :)</p>
       <Users users={users} />
+      <AddUser />
     </div>
   );
 }
