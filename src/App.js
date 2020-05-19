@@ -5,27 +5,30 @@ import AddUser from './AddUser';
 
 class App extends Component {
   state = {
-    users : [
+    users143 : [
         {name: 'Name1', age: 21, course: 'cse', id: 1},
         {name: 'Name2', age: 89, course: 'mes', id: 2},
         {name: 'Name3', age: 25, course: 'ddr', id: 3}
     ]
   }
 
-    addUser = (user) => {
-      user.id = Math.random();
-      let users = [...this.state.users, user];
+    addUser342 = (user011) => {
+      user011.id = Math.random();
+      let users864 = [...this.state.users143, user011];
       this.setState({
-        users : users
+        users143 : users864
       });
+    }
+    deleteUser = (id) => {
+
     }
     render() {
   return (
     <div className="App">
       <h1>My First React app</h1>
       <p>Welcome :)</p>
-      <Users users={this.state.users} />
-      <AddUser addUser={this.addUser}/>
+      <Users users9989={this.state.users143} deleteUser={this.deleteUser} />
+      <AddUser addUser557={this.addUser342}/>
     </div>
   );
 }

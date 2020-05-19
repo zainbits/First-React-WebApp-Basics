@@ -18,7 +18,7 @@ const Users = (props) => {
     //         }
     // })
 
-    const users = props.users;
+    const users = props.users9989;
     
     return(
         <div className="user-list">
