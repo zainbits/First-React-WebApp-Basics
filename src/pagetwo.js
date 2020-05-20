@@ -9,7 +9,6 @@ const Users = ({users9989, deleteUser112}) => {
              map(user767 => {
                     return (
                             <div className="page" key={user767.id}>
-                                <div>ID: {user767.id}</div>
                                 <div>Name: {user767.name}</div>
                                 <div>Age:{user767.age}</div>
                                 <div>Course: {user767.course}</div>
