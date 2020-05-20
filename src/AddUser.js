@@ -18,11 +18,11 @@ class AddUser extends Component {
     }
     render(){
         return (
-            <div>
+            <div className="form">
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" onChange={this.handleChange} />
-                    <label htmlFor="age">Age:</label>
+                    <label htmlFor="age">Age:</label><br></br>
                     <input type="text" id="age" onChange={this.handleChange} />
                     <label htmlFor="course">Course:</label>
                     <input type="text" id="course" onChange={this.handleChange} />

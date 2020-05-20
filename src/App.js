@@ -27,6 +27,12 @@ class App extends Component {
         users143 : users122
       });
     }
+    componentDidMount(){
+      alert("Welcome")
+    }
+    componentDidUpdate(){
+      alert("This page is about to update")
+    }
     render() {
   return (
     <div className="App">
