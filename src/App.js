@@ -19,15 +19,20 @@ class App extends Component {
         users143 : users864
       });
     }
-    deleteUser = (id) => {
-
+    deleteUser333 = (id) => {
+      let users122 = this.state.users143.filter(user444 => {
+        return user444.id !== id
+      });
+      this.setState({
+        users143 : users122
+      });
     }
     render() {
   return (
     <div className="App">
       <h1>My First React app</h1>
       <p>Welcome :)</p>
-      <Users users9989={this.state.users143} deleteUser={this.deleteUser} />
+      <Users users9989={this.state.users143} deleteUser112={this.deleteUser333} />
       <AddUser addUser557={this.addUser342}/>
     </div>
   );

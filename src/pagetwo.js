@@ -1,40 +1,26 @@
 import React from 'react';
 
-const Users = (props) => {
-    //console.log(this.props);
-    // const users = props.users;
-    // const userList = users.map(user => {
-    //     if(user.age > 21){
-    //         return (
-    //             <div className="page" key={user.id}>
-    //                 <div>ID: {user.id}</div>
-    //                 <div>Name: {user.name}</div>
-    //                 <div>Age:{user.age}</div>
-    //                 <div>Course: {user.course}</div>
-    //             </div>
-    //         )
-    //     } else {
-    //         return null;
-    //         }
-    // })
-
-    const users = props.users9989;
+const Users = ({users9989, deleteUser112}) => {
     
     return(
         <div className="user-list">
             {
-            users.map(user => {
-                return user.age > 21 ? (
-                    <div className="page" key={user.id}>
-                        <div>ID: {user.id}</div>
-                        <div>Name: {user.name}</div>
-                        <div>Age:{user.age}</div>
-                        <div>Course: {user.course}</div>
-                    </div>
-        ) : null;
-    })}
+             users9989.
+             map(user767 => {
+                    return (
+                            <div className="page" key={user767.id}>
+                                <div>ID: {user767.id}</div>
+                                <div>Name: {user767.name}</div>
+                                <div>Age:{user767.age}</div>
+                                <div>Course: {user767.course}</div>
+                                <button onClick={() => {deleteUser112(user767.id)}}>DeleteUser</button>
+                            </div>
+                        )
+                    }
+                )
+            }
         </div>
-    )
+    );
 }
 
-export default Users
+export default Users;
